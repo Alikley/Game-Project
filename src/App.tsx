@@ -24,7 +24,7 @@ function App() {
           bg=""
           display={{ base: 'none', lg: 'block' }}
         >
-          Aside
+          
         </chakra.div>
         <GridItem area="main" >
           <GameGrid />
