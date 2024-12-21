@@ -1,13 +1,13 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from "react";
 
-import './App.css'
-import { ColorModeButton } from './components/ui/color-mode'
-import GameGrid from './components/GameGrid'
-import { Grid, GridItem, chakra } from '@chakra-ui/react'
-import NavBar from './components/NavBar'
+import "./App.css";
+import { ColorModeButton } from "./components/ui/color-mode";
+import GameGrid from "./components/GameGrid";
+import { Grid, GridItem, chakra } from "@chakra-ui/react";
+import NavBar from "./components/NavBar";
+import GenreList from "./components/GenreList";
 
 function App() {
-  
   return (
     <div className="App">
       <Grid
@@ -16,22 +16,18 @@ function App() {
           lg: `"nav nav" "aside main"`,
         }}
       >
-        <GridItem area="nav" >
+        <GridItem area="nav">
           <NavBar />
         </GridItem>
-        <chakra.div
-          as={GridItem}
-          bg=""
-          display={{ base: 'none', lg: 'block' }}
-        >
-          
+        <chakra.div as={GridItem} bg="" display={{ base: "none", lg: "block" }}>
+          <GenreList />
         </chakra.div>
-        <GridItem area="main" >
+        <GridItem area="main">
           <GameGrid />
         </GridItem>
       </Grid>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
