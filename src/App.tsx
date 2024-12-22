@@ -19,7 +19,12 @@ function App() {
         <GridItem area="nav">
           <NavBar />
         </GridItem>
-        <chakra.div as={GridItem} bg="" display={{ base: "none", lg: "block" }}>
+        <chakra.div
+          as={GridItem}
+          bg=""
+          display={{ base: "none", lg: "block" }}
+          paddingX={5}
+        >
           <GenreList />
         </chakra.div>
         <GridItem area="main">
