@@ -39,6 +39,7 @@ function App() {
         </chakra.div>
         <GridItem area="main">
           <PlatformSelector
+            selectedPlatform={selectedPlatform}
             onSelectPlatform={(platform) => setSelectedPlatform(platform)}
           />
           <GameGrid
