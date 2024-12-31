@@ -11,7 +11,7 @@ import { Genre } from "./hooks/useGenres";
 
 export interface GameQuery {
   genreId?: number;
-  platformId?:number;
+  platformId?: number;
   sortOrder: string;
   searchText: string;
 }
@@ -53,7 +53,7 @@ function App() {
               <PlatformSelector
                 selectedPlatformId={gameQuery.platformId}
                 onSelectPlatform={(platform) =>
-                  setGameQuery({ ...gameQuery, platformId:platform.id })
+                  setGameQuery({ ...gameQuery, platformId: platform.id })
                 }
               />
             </Box>
