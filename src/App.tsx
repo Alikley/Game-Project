@@ -37,14 +37,11 @@ function App() {
               />
             </Box>
             <SortSelector
-              sortOrder={gameQuery.sortOrder}
-              onSelectSortOrder={(sortOrder) =>
-                setGameQuery({ ...gameQuery, sortOrder })
-              }
+             
             />
           </Flex>
         </Box>
-        <GameGrid gameQuery={gameQuery} />
+        <GameGrid  />
       </GridItem>
     </Grid>
   );
